@@ -1,0 +1,60 @@
+  @@include('header.html', {
+    "template": "competition"
+  })
+  <div id="competition">
+    <article>
+      <div class="container">
+        <h1>Your chance to win a Whirlpool Supreme Care Washing Machine</h1>
+        <img class="competition__image" src="images/nqd__competition__zen-washing-machine.png" alt-"" />
+        <p>Helping to achieve that moment of peace and quiet you’re yearning for. This National Quiet Day, Whirlpool is giving one lucky person the chance to win a Supreme Care Washing Machine.</p>
+        <p>With the quietest spin cycle on the market* Supreme Care includes ZenTechnology - cutting edge engineering which means laundry doesn’t need to interrupt life.</p>
+        <p>Simply answer the competition question using the form below before midnight on Sunday 8th October for your chance to win.</p>
+        <p>Good luck everyone!</p>
+      </div>
+    </article>
+    <div class="competition-form">
+      <div class="container">
+        <form class="form" method="post">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">How quiet is the Whirlpool Supreme Care Washing machine spin cycle in decibels?</legend>
+            <div class="text-center">
+              <ul class="radio-btn-list">
+                <li class="radio-btn-list__item">
+                  <label><input type="radio" name="dba" value="68" />68 dba</label>
+                </li>
+                <li class="radio-btn-list__item">
+                  <label><input type="radio" name="dba" value="75" />75 dba</label>
+                </li>
+                <li class="radio-btn-list__item">
+                  <label><input type="radio" name="dba" value="84" />84 dba</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <div class="form__row">
+            <input id="first-name" class="form__input" type="text" name="firstname" placeholder="First name" />
+          </div>
+          <div class="form__row">
+            <input id="last-name" class="form__input" type="text" name="lastname" placeholder="Last name" />
+          </div>
+          <div class="form__row">
+            <input id="tel" class="form__input" type="tel" name="tel" placeholder="Contact number" />
+          </div>
+          <div class="form__row">
+            <input id="email" class="form__input" type="email" name="email" placeholder="Email address" />
+          </div>
+          <div class="form__row">
+            <label class="competition-form__opt-in"><input id="opt-in" type="checkbox" name="opt-in" value="true">I agree that I would like to receive promotional communications from Whirlpool UK Appliances Limited by email, post and/or telephone and I acknowledge that my data may be shared with carefully selected partners acting on our behalf for this purpose. Further information can be found in our <a href="http://www.whirlpool.co.uk/support/privacy-notice.content.html" target="_blank">Privacy Policy</a>.</label>
+          </div>
+          <div class="form__row">
+            <span class="required-msg">All fields are required</span>
+            <input id="js-competition-form__submit" class="btn btn--right" type="submit" value="Submit" />
+          </div>
+        </form>
+        <div class="disclaimer">
+          <p><a href="/documents/comp-terms.pdf" target="_blank">Terms and conditions</a> apply.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('footer.html')

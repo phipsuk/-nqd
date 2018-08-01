@@ -1,0 +1,57 @@
+/*********************************************
+  Brand colours
+**********************************************/
+$primary-colour: #8d43ac;
+
+
+
+
+/*********************************************
+  Custom media queries
+**********************************************/
+$small-width: 500px;
+$medium-width: 768px;
+$large-width: 1024px;
+
+@mixin small {
+  @media (min-width: #{$small-width}) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (min-width: #{$medium-width}) {
+    @content;
+  }
+}
+@mixin large {
+  @media (min-width: #{$large-width}) {
+    @content;
+  }
+}
+
+
+
+.disclaimer {
+	font-size: .889em;
+	color: #737373;
+
+  &__title {
+    display: block;
+    color: #333;
+    font-weight: 700;
+  }
+
+  &--contained {
+    max-width: 700px;
+    padding: 0 4%;
+    margin: 0 auto;
+  }
+}
+
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-12px);}
+  60% {transform: translateY(-6px);}
+}

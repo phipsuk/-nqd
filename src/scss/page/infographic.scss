@@ -1,0 +1,32 @@
+.infographic {
+  background-color: #e5e5e5;
+
+  &__image {
+    width:100%;
+    max-width: 1400px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.infographic-footer {
+  background-color: #442969;
+
+  &__title {
+    color: #fff;
+    color: rgba(255, 255, 255, .6);
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+  }
+  &__link {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+}

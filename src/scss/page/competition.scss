@@ -1,0 +1,29 @@
+.competition {
+  &__image {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto 30px;
+    box-shadow: 0 0 38px 0 rgba(0,0,0, 0.1);
+
+    @include medium {
+      float: right;
+      max-width: 37%;
+       margin-left: 50px;
+    }
+  }
+}
+
+
+.competition-form {
+  background-color: #e7e7e7;
+
+  &__opt-in {
+    font-size: 14px;
+  }
+}
+
+.required-msg {
+  font-size: 14px;
+  display: inline-block;
+  padding-top: 8px;
+}

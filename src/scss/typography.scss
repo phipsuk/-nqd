@@ -1,0 +1,38 @@
+html {
+	color: #333;
+	font-size: 100%;
+	line-height: 1.5;
+	font-family: 'Work Sans', sans-serif, Arial;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+	@include medium {
+		font-size: 	112.5%;
+	}
+}
+
+h1, h2, .title {
+	font-size: 1.667em;
+	line-height: 1.2;
+	font-weight: 300;
+	margin: 0 0 30px;
+}
+p {
+	font-size: 1em;
+	margin: 0 0 25px;
+
+	@include medium {
+		font-size: 0.889em;
+	}
+}
+a {
+	color: $primary-colour;
+	text-decoration: none;
+
+	&:hover {
+		color: lighten($primary-colour, 10%);
+	}
+}
+.text-center {
+	text-align: center;
+}

@@ -1,0 +1,61 @@
+.form {
+
+	&__fieldset {
+		background-color: #fff;
+		border: #fff 1px solid;
+		border-radius: 5px;
+		padding: 20px;
+		margin: 0 0 30px;
+
+		@include medium {
+			padding: 40px;
+		}
+	}
+
+	&__legend {
+		float: left;
+		text-align: center;
+		padding: 0;
+		@extend .title;
+	}
+
+	&__row {
+		margin-bottom: 20px;
+
+		&:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	  }
+	}
+
+	&__input {
+		box-sizing: border-box;
+		width: 100%;
+		font-size: 1em;
+		padding: 13px 15px;
+		border: #fff 1px solid;
+		border-radius: 5px;
+		&:focus {
+			outline: none;
+			border: $primary-colour 1px solid;
+		}
+	}
+}
+
+
+.radio-btn-list {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	&__item {
+		margin: 7px 7px 0;
+
+		@include medium {
+			float: left;
+			margin: 15px 15px 0;
+		}
+	}
+}

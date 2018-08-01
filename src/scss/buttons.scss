@@ -1,0 +1,23 @@
+.btn {
+	display: inline-block;
+	min-width: 120px;
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	background: $primary-colour;
+	background: linear-gradient(#8e44ad, #703589);
+	padding: 8px 22px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+
+	&:hover {
+		color: #fff;
+		background: lighten($primary-colour, 10%);
+		background: linear-gradient(lighten(#8e44ad, 10%), lighten(#703589, 10%));
+	}
+
+	&--right {
+		float: right;
+	}
+}

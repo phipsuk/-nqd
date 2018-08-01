@@ -1,0 +1,105 @@
+.skipto-intro {
+    display: block;
+    width: 62px;
+    height: 31px;
+    margin: 12% auto 0;
+    animation: bounce 2s infinite 1s;
+
+    &__icon path {
+      fill: #fff;
+    }
+}
+
+.intro-section {
+  text-align: center;
+
+  p {
+    font-size: 1em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.quote {
+  font-size: 1.333em;
+  font-weight: 300;
+  max-width: 510px;
+  margin: 40px auto 0;
+
+  &__mark {
+    display: block;
+    margin: 0 auto;
+    height: 37px;
+    width: 45px;
+    color: #fff;
+    font-size: 60px;
+    line-height: 1;
+    background: $primary-colour;
+    border-radius: 50%;
+    padding-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  &__content {
+    margin-bottom: 15px;
+  }
+
+  &__author {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+
+.about-section {
+  text-align: center;
+  background-color: #a47c6d;
+  background-image: url(../images/nqd__home__mountains--small.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @include medium {
+			background-image: url(../images/nqd__home__mountains--large.jpg);
+	}
+
+  &__title {
+    color: #fff;
+    margin-bottom: 10%;
+  }
+
+  &__content {
+    float: left;
+    box-sizing: border-box;
+    max-width: 475px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    text-align: left;
+    padding: 3.2% 4%;
+    margin-bottom: 10%;
+
+    &--right {
+      float: right;
+    }
+
+    p {
+      font-size: 1em;
+      margin: 0;
+    }
+  }
+}
+.quiz-section {
+  text-align: center;
+
+  p {
+    font-size: 1em;
+  }
+
+  .btn {
+    @include medium {
+      margin-top: 15px;
+    }
+  }
+}
